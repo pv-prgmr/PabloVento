@@ -4,53 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="shortcut icon" href="./exfavicon.png" type="image/png">
-    <link rel="stylesheet" href="./estilos/estilo.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
-
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <title>Iniciobs</title>
+    <style>
+        .colorh-f{
+            background-color: rgb(43, 43, 78);
+        }
+        .mainbg{
+            background-color: rgb(239, 241, 241);
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-
-        <header class="header">    
-            <a href="./index.html"> <img src="./multimedia/imagen/logoInicio.png" alt="Logo" class="animate__animated animate__flipInX"> 
-            </a>
-            <nav class="navbar">
-            <ul>    
-                 <li><a href="index.html">Inicio</a></li>
-                 <li><a href="./paginas/historia.html">Historia</a></li>
-                 <li><a href="./paginas/galeria.html">Galeria</a></li>
-                 <li><a href="./paginas/cursos.html">Cursos</a></li>
-                 <li><a href="./paginas/contacto.html">Contacto</a></li>
-            </ul>
-            </nav>
-        </header>
-
-        <main>
-            <div class="left"> 
-                 <h2><span style="color:black; font-weight: bold; font-size: 2.5rem;"> Sabias que...</span>
-                 Es un Arte Nacional Reconocido en 2015 en el mundo entero por la UNESCO como Patrimonio Cultural Inmaterial de la Humanidad</h2>  
-                 <video muted="true" autoplay="true" loop="true">
-                 <source src="./multimedia/video/fileteandoinicio.mp4" type="video/mp4" >
-                 </video>     
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-dark colorh-f">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="./assets/img/logofp-2.png" height="70rem" width="200rem" alt="logo Fileteado porteño"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar-right me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active text-light text-uppercase" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-info text-uppercase" href="./html/historiabs.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-info text-uppercase" href="./html/galeriabs.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-info text-uppercase" href="./html/cursosbs.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-info text-uppercase" href="./html/nosotrosbs.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="right">
-                 <video muted="true" autoplay="true" loop="true"  >
-                 <source src="./multimedia/video/lsa.mp4" type="video/mp4">
-                 </video>
-                 <p class="animado">Un Sentimiento alegre que se pinta</p>
+        </nav>
+    </header>
+    <main class="mainbg">
+        <div class="container">
+            <div class="row">
+                <div class="col p-3 mt-2 mb-2 bg-primary text-dark">
+                    <h2 class="text-light"><span style="color: black;font-weight: bold;" >Sabias que...</span> Es un Arte Nacional que en 2015 fue Reconocido por la UNESCO como Patrimonio Cultural Inmaterial de la Humanidad</h2>
+                    <video autoplay loop >
+                    <source src="./assets/video/filetenacional.mp4" type="video/mp4" ></video>
+                </div>
+                <div class="col row align-items-center pt-2 pl-4 m-6">
+                    <video width="85%" autoplay loop><source src="./assets/video/lsa.mp4"></video>
+                    <p class="fs-1 text-info fst-italic">Un Sentimiento Alegre ...que se Pinta</p>
+                </div>
             </div>
-        </main>
-
-        <footer>    
-            <img src="./multimedia/imagen/footerimg.png" alt="Imagen de pie de pagina">
-            <p>&copy; Copyright ¨El Tano¨ ...Reservado de todo Derecho</p>                     
-        </footer>
-
-    </div>    
-
+        </div>    
+    </main>
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-dark colorh-f">
+        <div class="container-fluid">
+            <img src="./assets/img/footerimg.png" height="70rem" width="120rem" alt="imagen fileteado">
+            <p class="text-info fst-italic">&copy; Copyright El Tano ...Reservado de todo derecho</p>
+        </div>  
+    </footer>
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"> </script> 
 </body>
 </html>
