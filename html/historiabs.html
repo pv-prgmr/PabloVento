@@ -6,15 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../estilos/estilo.css">
+    <link rel="stylesheet" href="../animacion/animate.css">
     <title>historiabs</title>
-    <style>
-        .colorh-f{
-            background-color: rgb(43, 43, 78);
-        }
-        .mainbg{
-            background-color: rgb(239, 241, 241);
-        }
-    </style>
 </head>
 <body>
     <header> 
@@ -49,11 +44,11 @@
     <main class="mainbg">
         <div class="container">
             <div class="d-flex justify-content-center">
-                <img src="../assets/img/60.png" alt="imagen antiguo colectivo" title="antiguo colectivo linea 60 de buenos aires, con diseños de fileteado en toda su carroceria">
+                <img class="wow slideInLeft" src="../assets/img/60.png" alt="imagen antiguo colectivo" title="antiguo colectivo linea 60 de buenos aires, con diseños de fileteado en toda su carroceria">
             </div>
             <div class="bg-warning p-3 mb-2">
                 <h2>El Filete Porteño es un Arte pictórico decorativo nacido en la Ciudad de Buenos Aires</h2><br>
-                <p class="text-light fs-3">A fines del siglo XIX, Utilizado en sus comienzos en la decoración de carros tirados por caballos que transportaban carne, verdura y leche, abordó con el paso del tiempo otros escenarios como avisos y carteles que dan impronta al imaginario de la ciudad de Buenos Aires. <br><br>
+                <p class="text-black-50 fs-3">A fines del siglo XIX, Utilizado en sus comienzos en la decoración de carros tirados por caballos que transportaban carne, verdura y leche, abordó con el paso del tiempo otros escenarios como avisos y carteles que dan impronta al imaginario de la ciudad de Buenos Aires. <br><br>
                 La confluencia de diversas corrientes inmigratorias provenientes principalmente de Europa, sumadas a la impronta nativa y criolla, dan lugar al nacimiento de expresiones culturales propias de la ciudad; en lo musical, El Tango y en lo plástico, El Filete. <br><br>
                 Cuando en 1963, se prohíbe la tracción a sangre dentro de los límites de la ciudad, el Filete reafirma su presencia en la ornamentación de camiones y colectivos, y su resolución técnica como arte decorativo alcanza un nivel profesional. <br><br>
                 Así, desde sus rudimentarios comienzos, en las fábricas de carros aledañas al puerto y con el aporte de los antiguos maestros, se van incorporando los elementos característicos que hoy lo definen como lo conocemos. Primero solo líneas demarcando los cuadrantes de los carros, luego la hoja de acanto, las flores, las bolitas, los pajaritos y banderas, pasarían a conformar este colorido universo, que le da a la ciudad, un signo de particular identidad. También las frases provenientes del ingenio popular, ocuparían un lugar importante en los paños laterales de los carros y en los paragolpes de los camiones. Pero el lugar preferencial y central estaría reservado para figuras religiosas (Virgen de Lujan) e ídolos populares(Carlos Gardel) <br><br>
@@ -70,5 +65,9 @@
         </div>
     </footer>
 <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"> </script> 
+<script src="../animacion/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>
